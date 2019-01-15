@@ -1,27 +1,128 @@
-<!DOCTYPE html>
+<html>
 
 <head>
+  <title>Assignment Gallery</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Staatliches" rel="stylesheet">
+  <style>
 
-<title> STUFF </title>
+    body {
+      color: #FFF3C3;
+      font-family: 'Acme', sans-serif;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+  }
 
+    #header {
+      text-align: left;
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      color: #1C3C40;
+      font-family: 'Staatliches', sans-serif;
+      letter-spacing: 4px;
+    }
+
+    a {
+      color: #1C3C40;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 30px;
+      padding: 0px;
+      letter-spacing: 3px;
+    }
+
+    ul li {
+      padding-left: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: left;
+      transition: all 0.3s;
+    }
+
+    ul li:hover {
+      cursor: pointer;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      padding-left: 30px;
+    }
+
+    img {
+        -webkit-animation: mover 2s infinite  alternate;
+        animation: mover 2s infinite  alternate;
+        float: right;
+        padding-right: 50px;
+        padding-bottom: 15px;
+        opacity: .8;
+    }
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-70px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50px); }
+    }
+
+
+  </style>
 </head>
 
-<body>
+<body Background="lavendar.jpg" alt="Lavendar" id="Background img"/>
 
-<p>
-  sdfghjkgufydtyghjgif98yeh
-  hghdjksfksdhfkusd
-</p>
+  <div id="header">
 
-<ul>
-  <li>
-    fghjkhgfghj
-  </li>
-  <li>
-    fghjkhgfghjhgfhdjkjfiudrhfui
-  </li>
-</ul>
+    <h1>
+    HELLO, THE NAME'S MIRANDA.
+    </h1>
+
+    <p>
+    HERE'S SOME STUFF.
+    <p>
+  </div>
+
+  <div>
+
+    <ul>
+      <h2>Experiments:</h2>
+      <li><a href="images.html">Image Experiment</a></li>
+      <li><a href="queries.html">Media Queries</a></li>
+      <li><a href="flexbox.html">Flex Box</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+
+    <ul>
+      <h2>Explorations:</h2>
+      <li><a href="exploration1.html">Exploration 1</a></li>
+      <li><a href="exploration2.html">Exploration 2</a></li>
+      <li><a href="exploration3.html">Exploration 3</a></li>
+    </ul>
+  </div>
+  <div>
+
+    <ul>
+      <h2>Projects:</h2>
+      <li><a href="Project1.html">Project 1</a></li>
+      <li><a href="Project2.html">Project 2</a></li>
+    </ul>
+
+<img src="buzz buzz.png" alt="bee" id="Bee img" style="width: 120px;"/>
+
+  </div>
+
 </body>
-
 
 </html>
