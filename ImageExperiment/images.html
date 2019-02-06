@@ -1,4 +1,4 @@
-<html>
+<!doctype html>
 
 <head>
   <title>Image Experiment</title>
@@ -20,7 +20,8 @@
           position: relative;
           overflow: hidden;
         }
-      .close-button-block:before, .close-button-block:after {
+      .close-button-block:before,
+      .close-button-block:after {
           content: '';
           position: absolute;
           bottom: 0;
@@ -90,12 +91,14 @@
 
     @-webkit-keyframes mover {
       0% { transform: translateY(0); }
-      100% { transform: translateY(-70px); }
+      100% { transform: translateY(-70px);
+       }
     }
 
     @keyframes mover {
       0% { transform: translateY(0); }
-      100% { transform: translateY(-50px); }
+      100% { transform: translateY(-50px);
+      }
     }
 
 /* this is the background img styling*/
@@ -117,14 +120,9 @@
 
 /* this is the facts hover img styling*/
     .facts {
-      grid-column: span 1;
-      grid-row: span 1;
+      display: grid;
+      grid-template-columns: auto auto auto;
       justify-content: center;
-    }
-
-    .column {
-      float: left;
-      padding: 8px;
     }
 
     .row::after {
@@ -139,13 +137,14 @@
 
     .container {
       position: relative;
-      width: 50%;
+      width: 80%;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+      margin-bottom: 4rem;
     }
 
-    .image {
+    img {
       display: relative;
       width: 100%;
 
@@ -182,21 +181,12 @@
     }
 
 /* this is the hexagon img styling*/
-    .shapes {
-          margin-top: 20px
-          padding-top: 20px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          max-width: 100%;
-          position: relative;
-          width: 180px;
-        }
-
         .shapes img {
+          width: 120px;
           -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
       }
+
 
 /* this is the birds styling*/
     #header {
@@ -271,44 +261,46 @@
     </h1>
   </div>
 
-<div class="facts">
+  <section class="facts">
 
-<div class="row">
-  <div class="column">
-  <div class="container">
-    <img src="images/fact1.jpg" alt="owl" class="owl image" style="width 400px">
-    <div class="overlay">
-    <div class="text">Owls cannot move their eyes but they can rotate their head 270 degrees</div>
+    <div class="container">
+      <img src="images/fact1.jpg" alt="owl" />
+      <div class="overlay">
+        <div class="text">Owls cannot move their eyes but they can rotate their head 270 degrees</div>
+      </div>
     </div>
-  </div>
-  </div>
-  </div>
 
-  <div class="column">
-  <div class="container">
-    <img src="images/fact2.jpg" alt="owl" class="owl image" style="width 400px">
-    <div class="overlay">
-    <div class="text">There are over 10,000 bird species worldwide</div>
+    <div class="container">
+      <img src="images/fact2.jpg" alt="bird" />
+      <div class="overlay">
+        <div class="text">There are over 10,000 bird species worldwide</div>
+      </div>
     </div>
-  </div>
-  </div>
 
-  <div class="column">
-  <div class="container">
-    <img src="images/fact3.jpg" alt="owl" class="owl image" style="width 400px">
-    <div class="overlay">
-    <div class="text">Puffins are also known as Sea Parrots and their beaks change color throughout the year</div>
+    <div class="container">
+      <img src="images/fact3.jpg" alt="puffin bird" />
+      <div class="overlay">
+        <div class="text">Puffins are also known as Sea Parrots and their beaks change color throughout the year</div>
+      </div>
     </div>
-  </div>
-</div>
 
-</div>
+  </section>
 
-<div class="shapes">
-    <img src="images/circle1.jpg" alt="bird" style="width:100%">
-    <img src="images/circle3.jpg" alt="bird" style="width:100%">
-    <img src="images/circle2.jpg" alt="bird" style="width:100%">
-  </div>
+  <section class="facts shapes">
+
+    <div class="container">
+      <img src="images/circle1.jpg" alt="bird">
+    </div>
+
+    <div class="container">
+      <img src="images/circle3.jpg" alt="bird">
+    </div>
+
+    <div class="container">
+      <img src="images/circle2.jpg" alt="bird">
+    </div>
+
+  </section>
 
 <!--
       <div class="magnify">
