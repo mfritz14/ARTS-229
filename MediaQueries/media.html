@@ -202,14 +202,18 @@
  }
 
  .pluto {
-   width: 40px;
+   width: 65px;
    position: absolute;
    left:0;
    top:0;
-   padding: 9px;
+   padding: 12px;
  }
 
- .nasa {
+ .pluto img {
+   max-width: 100%;
+ }
+
+  aside img {
    background-color: #222;
  }
 
@@ -217,12 +221,12 @@
     @media screen and (min-width: 600px) {
 
       /* this is the navigation section */
-      .nasa {
+      aside img {
         float: right;
         display: block;
         padding: 50px;
         margin: 0 auto;
-        width: 100px;
+        width: 50%;
       }
 
       .alien {
@@ -234,12 +238,7 @@
 
       /* this is the navigation section */
 
-      article {
-        float: left;
-        width: 50%;
-      }
-
-      .nasa {
+      aside img {
         float: right;
         display: block;
         padding: 50px;
@@ -253,6 +252,12 @@
         margin-right: 50px;
         margin-top: 30px;
 
+      }
+
+        .left {
+          width: 50%;
+          float: left;
+        }
 
   </style>
 </head>
@@ -295,6 +300,9 @@ PLANET PLUTO
       disagreement about whether or not Pluto should be
       considered a planet.
     </p>
+  </article>
+
+<article class="left">
 
   <p>
     The demotion of Pluto was solely based on the
@@ -319,9 +327,7 @@ PLANET PLUTO
     from the sun like most think because its orbit
     actually comes closer to the sun than Neptune's does.
   </p>
-    </article>
 
-  <article class="left">
     <p>
       Many people try to argue Pluto's status with
       comments about how small it is, but there are
@@ -345,7 +351,7 @@ PLANET PLUTO
         </p>
   </article>
 
-  <aside class="nasa">
+  <aside>
     <img src="pluto.png" alt="pluto">
   </aside>
 
