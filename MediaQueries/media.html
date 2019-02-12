@@ -10,7 +10,7 @@
     body {
       background: url("background.jpg");
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: cover;
       animation: slidein 20s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
@@ -222,11 +222,7 @@
 
       /* this is the navigation section */
       aside img {
-        float: right;
-        display: block;
-        padding: 50px;
-        margin: 0 auto;
-        width: 50%;
+  
       }
 
       .alien {
@@ -239,10 +235,7 @@
       /* this is the navigation section */
 
       aside img {
-        float: right;
-        display: block;
-        padding: 50px;
-        margin-top: -20px;
+      max-width: 100%;
       }
 
       .alien {
@@ -257,6 +250,12 @@
         .left {
           width: 50%;
           float: left;
+        }
+
+        aside {
+          float: left;
+          width: 45%;
+          text-align: center;
         }
 
   </style>
