@@ -1,6 +1,6 @@
 
 
-  html {
+html {
   background-color: #C2C4B6 ;
 }
 
@@ -80,6 +80,7 @@ h2 {
 
 h3{
   font-family: 'Oswald', sans-serif;
+  font-size: 25px;
 }
 
 .grid-container1 {
@@ -98,6 +99,10 @@ h3{
 .header { grid-area: header;
 
 
+}
+
+.header h2 {
+  font-size: 35px;
 }
 
 .AquariusSym { grid-area: AquariusSym;
@@ -315,10 +320,10 @@ border: 1px solid #fff;
 .grid-container2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr .5fr .5fr .5fr .5fr .5fr .5fr;
   grid-template-areas: "header header header header" "AquariusContent AquariusContent PiscesContent PiscesContent" "AriesContent AriesContent TaurusContent TaurusContent" "GeminiContent GeminiContent CancerContent CancerContent" "LeoContent LeoContent VirgoContent VirgoContent" "LibraContent LibraContent ScorpioContent ScorpioContent" "SagittariusContent SagittariusContent CapricornContent CapricornContent";
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 0px;
 }
 
@@ -332,7 +337,7 @@ border: 1px solid #fff;
 }
 
 .AquariusContent h3 {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .PiscesContent { grid-area: PiscesContent;
@@ -341,7 +346,7 @@ border: 1px solid #fff;
  }
 
  .PiscesContent h3 {
-   padding-left: 20px;
+   padding-left: 25px;
  }
 
 .AriesContent { grid-area: AriesContent;
@@ -350,7 +355,7 @@ border: 1px solid #fff;
 }
 
 .AriesContent h3 {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .TaurusContent { grid-area: TaurusContent;
@@ -358,9 +363,17 @@ border: 1px solid #fff;
   background-color: #E8DBCB;
 }
 
+.TaurusContent h3 {
+  padding-left: 25px;
+}
+
 .GeminiContent { grid-area: GeminiContent;
   text-align: left;
   background-color: #E8DBCB;
+}
+
+.GeminiContent h3 {
+  padding-left: 25px;
 }
 
 .CancerContent { grid-area: CancerContent;
@@ -368,9 +381,17 @@ border: 1px solid #fff;
   background-color: #E8DBCB;
 }
 
+.CancerContent h3 {
+  padding-left: 25px;
+}
+
 .LeoContent { grid-area: LeoContent;
   text-align: left;
   background-color: #E8DBCB;
+}
+
+.LeoContent h3 {
+  padding-left: 25px;
 }
 
 .VirgoContent { grid-area: VirgoContent;
@@ -378,9 +399,17 @@ border: 1px solid #fff;
   background-color: #E8DBCB;
  }
 
+ .VirgoContent h3 {
+   padding-left: 25px;
+ }
+
 .LibraContent { grid-area: LibraContent;
   text-align: left;
   background-color: #E8DBCB;
+}
+
+.LibraContent h3 {
+  padding-left: 25px;
 }
 
 .ScorpioContent { grid-area: ScorpioContent;
@@ -388,9 +417,17 @@ border: 1px solid #fff;
   background-color: #E8DBCB;
 }
 
+.ScorpioContent h3 {
+  padding-left: 25px;
+}
+
 .SagittariusContent { grid-area: SagittariusContent;
   text-align: left;
   background-color: #E8DBCB;
+}
+
+.SagittariusContent h3 {
+  padding-left: 25px;
 }
 
 .CapricornContent { grid-area: CapricornContent;
@@ -398,9 +435,101 @@ border: 1px solid #fff;
   background-color: #E8DBCB;
 }
 
-p{
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 19px;
-  margin-bottom: -5px;
+.CapricornContent h3 {
+  padding-left: 22px;
 }
+
+p{
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 19px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+footer {
+  height: 100px;
+}
+
+
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+    grid-template-areas: "header header header header" "aquarius aquarius pisces pisces"  "aries aries taurus taurus" "gemini gemini cancer cancer" "leo leo virgo virgo" "libra libra scorpio scorpio" "sagittarius sagittarius capricorn capricorn" "footer footer footer footer";
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0px;
+  }
+
+  .header { grid-area: header;
+
+  }
+
+  .aquarius { grid-area: aquarius;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .pisces { grid-area: pisces;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .aries { grid-area: aries;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .taurus { grid-area: taurus;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .gemini { grid-area: gemini;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .cancer { grid-area: cancer;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .leo { grid-area: leo;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .virgo { grid-area: virgo;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .libra { grid-area: libra;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .scorpio { grid-area: scorpio;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .sagittarius { grid-area: sagittarius;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .capricorn { grid-area: capricorn;
+    background-color: #E8DBCB;
+    padding-left: 50px;
+  }
+
+  .footer { grid-area: footer;
+
+  }
+
+  progress {
+
+  }
