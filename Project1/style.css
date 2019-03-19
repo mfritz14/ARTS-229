@@ -295,11 +295,11 @@ footer {
   margin-bottom: 40px;
 }
 
-input.MyButton {
+.MyButton {
 width: 160px;
 padding: 20px;
 font-weight: bold;
-font-size: 100%;
+font-size: 120%;
 background: #8474A1;
 color: black;
 border: 1px solid #8474A1;
@@ -309,9 +309,11 @@ letter-spacing: 2px;
 -moz-box-shadow:: 6px 6px 5px #999;
 -webkit-box-shadow:: 6px 6px 5px #999;
 box-shadow:: 6px 6px 5px #999;
+display: block;
+text-align: center;
 }
 
-input.MyButton:hover {
+.MyButton:hover {
 color: #F3DBCF;
 background: #000;
 border: 1px solid #fff;
@@ -531,5 +533,65 @@ footer {
   }
 
   progress {
-
+    -webkit-appearance: none;
+    background-color: #8474A1;
   }
+
+  .heart {
+  position:relative;
+  margin: 1em;
+}
+
+.heart:before, .heart:after {
+	position: absolute;
+  content: "";
+  top: 0;
+	background: #8474A1;
+
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+
+.heart:after {
+	left: 0;
+
+	transform: rotate(45deg);
+	transform-origin :100% 100%;
+}
+
+.heart:before {
+  animation: left-ventricle .7s linear infinite;
+}
+
+.heart:after {
+  animation: right-ventricle .7s linear infinite;
+}
+
+@keyframes left-ventricle {
+  0%, 100% {
+    left: 100px;
+    width: 100px;
+    height: 170px;
+  	border-radius: 50px 50px 0 0;
+  }
+  20%, 40% {
+    left: 100px;
+	  width: 110px;
+  	height: 180px;
+  	border-radius: 70px 70px 0 0;
+  }
+}
+
+@keyframes right-ventricle {
+  0%, 100% {
+    width: 100px;
+    height: 170px;
+  	border-radius: 50px 50px 0 0;
+  }
+  20%, 40% {
+    left: -10px;
+	  width: 110px;
+  	height: 180px;
+  	border-radius: 70px 70px 0 0;
+  }
+}
