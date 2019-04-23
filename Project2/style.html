@@ -1,14 +1,38 @@
 <!doctype html>
 
 <head>
-  <title>Project 1</title>
+  <title>Project 2</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
 <style>
 
 img {
 max-width: 200px;
-padding: 15px;
+padding: 45px;
+}
+
+.article1::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 190px;
+  height: 290px;
+  border: 3px solid #000;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.article2::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 250px;
+  height: 240px;
+  border: 3px solid #000;
+  margin-left: 20px;
+  margin-top: 70px;
 }
 
 .mySlides img {
@@ -34,16 +58,16 @@ font-family: "Quicksand", sans-serif;
 font-size: 17px;
 }
 
-.box {
-  width: 200px;
-  height:300px;
-  border:3px solid #000;
-  margin-left: 15px;
-}
-
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+.article img::before {
+  content: "";
+  width: 220px;
+  height:350px;
+  border:3px solid #000;
+  margin-left: 315px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -133,6 +157,7 @@ img {vertical-align: middle;}
 <body>
   <header>
       <img src="thepulse.png" alt="pulse logo"/>
+</header>
 
     <body>
 
@@ -158,18 +183,16 @@ img {vertical-align: middle;}
 
     <div class="arrow">
       <p>
-        <a href="Project2/article1.html" Read More &#x2192;</a>
+        <a href="Project2/article1.html">Read More &#x2192;</a>
       </p>
     </div>
 
-        <div class="article">
+        <div class="article1">
           <img src="a1.jpg" />
-          <div class="box"</div>
         </div>
 
-        <div class="article">
+        <div class="article2">
         <img src="a2.jpg" />
-        <div class="box"</div>
         </div>
 
 <div class="slideshow-container">
