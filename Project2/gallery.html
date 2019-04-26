@@ -89,8 +89,59 @@
     background-color: #f2f2f2;
     width: 120%;
     height: 60px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 
 
@@ -107,13 +158,42 @@
     <nav>
             <ul>
               <li><a style="text-decoration: none" href="index.html">HOME</a></li>
-              <li><a style="text-decoration: none" href="about.html">GALLERY</a></li>
-        			<li><a style="text-decoration: none" href="comp.html">ARTICLES</a></li>
+              <li><a style="text-decoration: none" href="gallery.html">GALLERY</a></li>
+        			<li><a style="text-decoration: none" href="articles.html">ARTICLES</a></li>
             </ul>
         </nav>
   </header>
 
 
+  <div class="row">
+    <div class="column">
+      <img src="a1.jpg" style="width:100%">
+      <img src="a2.jpg" style="width:100%">
+      <img src="a3.jpg" style="width:100%">
+      <img src="g10.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="s2.jpg" style="width:100%">
+      <img src="g1.jpg" style="width:100%">
+      <img src="g2.jpg" style="width:100%">
+      <img src="g3.jpg" style="width:100%">
+      <img src="g11.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="s3.jpg" style="width:100%">
+      <img src="g5.jpg" style="width:100%">
+      <img src="s1.jpg" style="width:100%">
+      <img src="g4.jpg" style="width:100%">
+      <img src="a5.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="g6.jpg" style="width:100%">
+      <img src="g7.jpg" style="width:100%">
+      <img src="g8.jpg" style="width:100%">
+      <img src="g9.jpg" style="width:100%">
+      <img src="a4.jpg" style="width:100%">
+    </div>
+  </div>
 
 
   <footer>
