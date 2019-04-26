@@ -6,6 +6,140 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
 <style>
 
+  header {
+  height: 140px;
+  width: 102%;
+  text-align: right;
+	padding: 0;
+  padding-top: 20px;
+	margin: 0;
+  margin-left:-1%;
+  margin-top: -25px;
+  background-color: #f2f2f2;
+}
+
+nav {
+padding-top: 5px;
+padding-bottom: 20px;
+margin-top: 60px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+display: inline;
+}
+
+li a {
+display: inline-block;
+padding-left: 50px;
+padding-right: 80px;
+text-decoration: none;
+text-align: center;
+font-size: 20px;
+font-family: 'Anton', sans-serif;
+letter-spacing: 1px;
+}
+
+
+li a:hover {
+  color: white;
+}
+
+a {text-decoration: none;
+color: black;}
+
+a:hover {
+  color: white;
+}
+
+a:link {
+  color: black;
+}
+
+.logo{
+  float: left;
+  padding: 25px;
+}
+
+.article1::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 190px;
+  height: 290px;
+  border: 3px solid #000;
+  margin-left: 20px;
+  margin-top: 19px;
+}
+
+.article1 {
+  padding-top: 70px;
+}
+
+.article2::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 230px;
+  height: 240px;
+  border: 3px solid #000;
+  margin-left: 22px;
+  margin-top: 70px;
+}
+
+h1 {
+padding-left: 15px;
+font-family: "Anton", sans-serif;
+font-size: 35px;
+}
+
+h2 {
+padding-left: 15px;
+font-family: "Anton", sans-serif;
+font-size: 25px;
+}
+
+p {
+padding-left: 15px;
+font-family: "Quicksand", sans-serif;
+font-size: 17px;
+}
+
+.left {
+     float: left;
+     max-width: 200px;
+     padding: 45px;
+   }
+
+   .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+
+   .description {
+     padding-top: 40px;
+     padding-left: 20px;
+     max-width: 900px;
+     padding-right: 30px;
+   }
+
+   footer {
+     background-color: #f2f2f2;
+	   width: 120%;
+	   height: 60px;
+	   margin-top: 200px;
+   }
+
+
 
 </style>
 
@@ -14,9 +148,67 @@
 <body>
   <header>
 
+    <div class="logo">
+    		<img src="thepulse.png" height="90"  alt="logo">
+    		</div>
+
+    <nav>
+            <ul>
+              <li><a style="text-decoration: none" href="index.html">HOME</a></li>
+              <li><a style="text-decoration: none" href="about.html">GALLERY</a></li>
+        			<li><a style="text-decoration: none" href="comp.html">ARTICLES</a></li>
+            </ul>
+        </nav>
   </header>
 
-      <body>
+  <div class="carousel">
+    <img src="s1.jpg" width="100%" alt="pl">
+    </div>
+
+    <div class="article1 clearfix">
+  <img src="a1.jpg" class="left" />
+  <div class="description">
+    <h1>Paper Lanterns</h1>
+    <p>Paper Lanterns is a pop punk/alt
+      rock band from Jackson, Michigan.
+      It was originally a project of
+      lead singer and guitarist Colton
+      Choate that started around 2012
+      and was revamped when drummer
+      Rocky Hutchins joined in the
+      winter of 2016. After playing
+      as a two-piece and with multiple
+      temporary members for a year,
+      Colton recruited a past bandmate,
+      Dylan May, to play bass. </p>
+    <p><a style="text-decoration: none" href="Project2/article1.html">Read More &#x2192;</a> </p>
+  </div>
+</div>
+
+        <div class="article2 clearfix">
+      <img src="a2.jpg" class="left" />
+      <div class="description">
+        <h1>Double Shot</h1>
+        <p>Vocalist John “Stix” Stickel
+          was just starting kindergarten
+          when Pearl Jam was climbing the
+          charts, but the remaining members
+          of Double Shot, Steve “Bubba”
+          Mattison (drums), Steve “Big
+          Daddy” Annibal (bass), Howard
+          “Hoob” Tessman (guitar), and
+          Kraig “Krankn’” Westfall (guitar),
+          were spinning the vinyl, or even
+          inserting 8 track cassettes of
+          the groups they cover today. </p>
+        <p><a style="text-decoration: none" href="Project2/article2.html">Read More &#x2192;</a> </p>
+      </div>
+    </div>
+
+
+<footer>
+
+  </footer>
 
 
 
