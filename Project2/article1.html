@@ -6,6 +6,177 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
 <style>
 
+  header {
+  height: 145px;
+  width: 102%;
+  text-align: right;
+	padding: 0;
+  padding-top: 20px;
+	margin: 0;
+  margin-left:-1%;
+  margin-top: -25px;
+  background-color: #f2f2f2;
+}
+
+nav {
+padding-top: 5px;
+padding-bottom: 20px;
+margin-top: 60px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+display: inline;
+}
+
+li a {
+display: inline-block;
+padding-left: 50px;
+padding-right: 80px;
+text-decoration: none;
+text-align: center;
+font-size: 20px;
+font-family: 'Anton', sans-serif;
+letter-spacing: 1px;
+}
+
+
+li a:hover {
+  color: white;
+}
+
+a {text-decoration: none;
+color: black;}
+
+a:hover {
+  color: white;
+}
+
+a:link {
+  color: black;
+}
+
+.logo{
+  float: left;
+  padding: 25px;
+}
+
+.article1::before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 190px;
+  height: 290px;
+  border: 3px solid #000;
+  margin-left: 20px;
+  margin-top: 19px;
+}
+
+.article1 {
+  padding-top: 70px;
+}
+
+h1 {
+padding-left: 15px;
+font-family: "Anton", sans-serif;
+font-size: 35px;
+}
+
+h2 {
+padding-left: 15px;
+font-family: "Anton", sans-serif;
+font-size: 25px;
+}
+
+p {
+padding-left: 15px;
+font-family: "Quicksand", sans-serif;
+font-size: 17px;
+}
+
+.left {
+     float: left;
+     max-width: 300px;
+     padding: 45px;
+   }
+
+   .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+
+   .description {
+     padding-top: 40px;
+     padding-left: 20px;
+     max-width: 930px;
+     padding-right: 30px;
+   }
+
+   footer {
+     background-color: #f2f2f2;
+	   width: 120%;
+	   height: 60px;
+	   margin-top: 200px;
+   }
+
+   * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+ }
+
+
+ .row {
+   display: -ms-flexbox; /* IE10 */
+   display: flex;
+   -ms-flex-wrap: wrap; /* IE10 */
+   flex-wrap: wrap;
+   padding: 0 4px;
+   margin-top: 40px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ /* Create four equal columns that sits next to each other */
+ .column {
+   -ms-flex: 25%; /* IE10 */
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
+ }
+
+ .column img {
+   margin-top: 8px;
+   vertical-align: middle;
+ }
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+   .column {
+     -ms-flex: 50%;
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column {
+     -ms-flex: 100%;
+     flex: 100%;
+     max-width: 100%;
+   }
+ }
 
 
 </style>
@@ -14,11 +185,85 @@
 
 <body>
   <header>
-  
+    <div class="logo">
+    		<img src="thepulse.png" height="90"  alt="logo">
+    		</div>
+
+    <nav>
+            <ul>
+              <li><a style="text-decoration: none" href="index.html">HOME</a></li>
+              <li><a style="text-decoration: none" href="gallery.html">GALLERY</a></li>
+        			<li><a style="text-decoration: none" href="articles.html">ARTICLES</a></li>
+            </ul>
+        </nav>
   </header>
 
-      <body>
+  <div class="article1 clearfix">
+  <img src="a1.jpg" class="left" />
+  <div class="description">
+  <h1>Paper Lanterns</h1>
+  <p>Paper Lanterns is a pop punk/alt
+    rock band from Jackson, Michigan.
+    It was originally a project of
+    lead singer and guitarist Colton
+    Choate that started around 2012
+    and was revamped when drummer
+    Rocky Hutchins joined in the
+    winter of 2016. After playing
+    as a two-piece and with multiple
+    temporary members for a year,
+    Colton recruited a past bandmate,
+    Dylan May, to play bass. </p>
 
+  <p>
+    Since Dylan joined in December of
+    2017, Paper Lanterns has been playing
+    shows all over Michigan from their
+    hometown of Jackson to Lansing, Grand
+    Rapids, Detroit and more. They released
+    their debut EP, “New Faces”, in March of
+    2019 on all streaming platforms.
+    </p>
 
+    <p>
+      Paper Lanterns’ sound blends nostalgic
+      and modern pop punk with a taste of
+      classic rock. They pride themselves on
+      putting on an engaging, high-energy
+      show at every venue whether they’re
+      playing for 200 people or 20. They hope
+      to get out on the road this summer and
+      play shows around the Midwest, as well
+      as write and record more music.
+      </p>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="s1.jpg" style="width:100%">
+      <img src="g2.jpg" style="width:100%">
+      <img src="g14.jpg" style="width:100%">
+      <img src="g15.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="g3.jpg" style="width:100%">
+      <img src="g1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="g4.jpg" style="width:100%">
+      <img src="g11.jpg" style="width:100%">
+      <img src="g16.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="g12.jpg" style="width:100%">
+      <img src="g13.jpg" style="width:100%">
+      <img src="g17.jpg" style="width:100%">
+      <img src="g10.jpg" style="width:100%">
+    </div>
+
+  <footer>
+
+    </footer>
 
   </body>
